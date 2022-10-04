@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Permanent+Marker&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom,#000, transparent);
+    background-color: rgba(0, 0, 0, 0.863);
+    
+}
+
+nav{
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.affter{
+    text-decoration: none;
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.affter::after{
+    content: " ";
+    width: 0;
+    height: 4px;
+    background-color: rgb(255, 60, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.affter:hover::after{
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav h1{
+    color: rgb(235, 235, 235);
+    text-shadow: 0px 1px 10px black;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
+    transition: 0.5s;
+}
+
+nav a h1:hover{
+    color: rgb(255, 60, 0) ;
+}
+
+body{
+    background-image: url(../imagens/Imagens-filmes/backgroundfilmes.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container1{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.863);
+    color: #fff;
+    text-align: center;
+}
+
+.containerfilm{
+    display: flex;
+    justify-content: center;
+}
+
+.containerfilm img{
+    opacity: 75%;
+    width: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.containerfilm img:hover{
+    opacity: 100;
+}
+
+.title1{
+    padding: 80px 0px 80px 0px;
+}
+
+.containerparticipacao{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.containerparticipacao img{
+    width: 250px;
+    opacity: 75%;
+}
+
+.containerparticipacao img:hover{
+    opacity: 100%;
+}
+
+.part1{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.part2{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:1250px) {
+    .containerparticipacao{
+        flex-direction: column;
+    }
+    .part1{
+        width: 100vw;
+    }
+
+    .part2{
+        padding-top: 30px;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:966px) {
+    nav{
+        width: 85vw;
+    }
+
+    nav h1{
+        font-size: 36px;
+    }
+
+    .affter{
+        font-size: 22px;
+    }
+
+    .containerfilm img{
+        width: 200px;
+    }
+
+    .title1{
+        font-size: 14px;
+    }
+
+    .containerfilm h2{
+        font-size: 22px;
+    }
+
+    .containerfilm h3{
+        font-size: 14px;
+    }
+
+    .containerfilm p{
+        font-size: 10px;
+    }
+
+    .containerfilm h4{
+        font-size: 12px;
+    }
+
+    .containerparticipacao img{
+        width: 200px;
+    }
+
+    .containerparticipacao h2{
+        font-size: 22px;
+    }
+
+    .containerparticipacao h3{
+        font-size: 14px;
+    }
+} 
+
+@media screen and (max-width:600px){
+    .affter{
+        display: none;
+    }
+
+    .containerfilm{
+        flex-direction: column;
+    }
+
+    .film{
+        padding-top: 30px;
+    }
+
+    .part1{
+        flex-direction: column;
+    }
+
+    .part2{
+        flex-direction: column;
+    }
+
+    .containerfilm img{
+        width: 300px;
+    }
+
+    .containerfilm h2{
+        font-size: 30px;
+    }
+
+    .containerfilm h3{
+        font-size: 22px;
+    }
+
+    .containerfilm h4{
+        font-size: 18px;
+    }
+
+    .containerfilm p{
+        font-size: 14px;
+    }
+
+    .title1{
+        font-size: 17px;
+    }
+
+    .containerparticipacao img{
+        width: 280px;
+    }
+
+    .containerparticipacao h2{
+        font-size: 30px;
+    }
+
+    .containerparticipacao h3{
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+}
